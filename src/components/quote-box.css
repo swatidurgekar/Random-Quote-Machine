@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #5cc0db; */
+}
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box {
+  width: 500px;
+  background-color: white;
+  padding-bottom: 35px;
+}
+
+#text {
+  display: block;
+  padding-top: 35px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#author {
+  margin-left: 350px;
+}
+
+#new-quote {
+  margin-left: 290px;
+  height: 35px;
+  width: 100px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+#tweet-button {
+  margin-left: 40px;
+  height: 35px;
+  width: 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+#tweet-quote {
+  color: white;
+}
