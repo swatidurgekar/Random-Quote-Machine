@@ -10,17 +10,17 @@ const QuoteBox = () => {
 
   async function getData() {
     const colorValue = "#" + Math.floor(Math.random() * 1677215).toString(16);
-    if (colorValue === "ffffff") {
-      setColor("#000000");
-    } else {
-      setColor(colorValue);
-    }
     const response = await fetch("https://type.fit/api/quotes");
     if (response.ok) {
       const data = await response.json();
       const value = Math.floor(Math.random() * data.length);
       setQuote(data[value].text);
       setAuthor(data[value].author);
+      if (colorValue === "ffffff") {
+        setColor("#000000");
+      } else {
+        setColor(colorValue);
+      }
     }
   }
 
